@@ -1,31 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
-
-    <ImageView
-        android:layout_width="500dp"
-        android:layout_height="350dp"
-        android:src="@drawable/image"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:letterSpacing="0.03"
-        android:text="Register"
-        android:textColor="#0d6e6a"
-        android:textSize="35dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="350dp" />
+    tools:context=".UserProfile">
 
     <EditText
-        android:id="@+id/RegTxtUserEmail"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/forget"
@@ -36,24 +17,22 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="397dp" />
+        tools:layout_editor_absoluteY="312dp" />
 
     <EditText
-        android:id="@+id/RegTxtUserPwd"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Password"
+        android:text="Phone Number"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="453dp" />
+        tools:layout_editor_absoluteY="408dp" />
 
     <EditText
-        android:id="@+id/RegTxtUserLicense"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/forget"
@@ -64,31 +43,20 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteY="509dp" />
 
     <Button
-        android:id="@+id/BtnUserRegister"
+        android:id="@+id/updateProfile"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="Register"
+        android:text="UPDATE"
         android:textColor="#FFF"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="587dp" />
-
-    <TextView
-        android:id="@+id/haveAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In"
-        android:textColor="#0d6e6a"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="637dp" />
+        tools:layout_editor_absoluteY="626dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

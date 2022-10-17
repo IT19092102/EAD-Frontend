@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Fuel</string>
+    <string-array name="locations">
+        <item>Colombo</item>
+        <item>Kandy</item>
+        <item>Kaluthara</item>
+        <item>Galle</item>
+        <item>Matara</item>
+    </string-array>
 </resources>

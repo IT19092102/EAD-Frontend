@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
-    android:orientation="vertical">
+    tools:context=".StationLogin">
 
     <ImageView
         android:layout_width="500dp"
@@ -16,30 +16,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:letterSpacing="0.03"
-        android:text="Register"
+        android:text="Station Login"
         android:textColor="#0d6e6a"
         android:textSize="35dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="350dp" />
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="365dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/RegTxtUserEmail"
+        android:id="@+id/TxtStatName"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Email"
+        android:text="Station Name"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="397dp" />
+        tools:layout_editor_absoluteY="438dp" />
+
 
     <EditText
-        android:id="@+id/RegTxtUserPwd"
+        android:id="@+id/TxtStatPwd"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:background="@drawable/forget"
@@ -50,45 +51,31 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="453dp" />
-
-    <EditText
-        android:id="@+id/RegTxtUserLicense"
-        android:layout_width="350dp"
-        android:layout_height="48dp"
-        android:background="@drawable/forget"
-        android:paddingLeft="20dp"
-        android:text="Driving License"
-        android:textColor="#0d6e6a"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="510dp" />
+        tools:layout_editor_absoluteY="524dp" />
 
     <Button
-        android:id="@+id/BtnUserRegister"
+        android:id="@+id/BtnStatLogin"
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="Register"
+        android:text="Login"
         android:textColor="#FFF"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="587dp" />
+        tools:layout_editor_absoluteY="612dp" />
 
     <TextView
-        android:id="@+id/haveAccount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In"
+        android:text="Sign up for a Station Account"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="637dp" />
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="674dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
