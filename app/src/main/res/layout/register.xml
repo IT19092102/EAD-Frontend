@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,88 +8,148 @@
     android:orientation="vertical">
 
     <ImageView
-        android:layout_width="500dp"
-        android:layout_height="350dp"
+        android:layout_width="407dp"
+        android:layout_height="351dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="380dp"
         android:src="@drawable/image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="334dp"
         android:letterSpacing="0.03"
         android:text="Register"
         android:textColor="#0d6e6a"
         android:textSize="35dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="135dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/RegTxtUserEmail"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="397dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="286dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Email"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="397dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/RegTxtUserPwd"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="227dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Password"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="453dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/RegTxtUserLicense"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="517dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="166dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Driving License"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="510dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/BtnUserRegister"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="642dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/button"
         android:text="Register"
         android:textColor="#FFF"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="587dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/haveAccount"
+        android:id="@+id/signInTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already have an account? Sign In"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="691dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sign In if you already have an account"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="637dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/PhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="578dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="105dp"
+        android:background="@drawable/forget"
+        android:paddingLeft="20dp"
+        android:text="Phone Number"
+        android:textColor="#0d6e6a"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
