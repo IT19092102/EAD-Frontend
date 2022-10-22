@@ -6,84 +6,103 @@
     android:layout_height="match_parent"
     tools:context=".UserProfile">
 
-
     <EditText
-        android:id="@+id/emailText"
+        android:id="@+id/StationText"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginTop="52dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Station Name"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="240dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/phoneText"
+        android:id="@+id/StationLoc"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Station Location"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="330dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StationText"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/licenseText"
+        android:id="@+id/StationBrand"
         android:layout_width="350dp"
         android:layout_height="48dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="22dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Station Brand"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="421dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StationLoc"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/passwordText"
+        android:id="@+id/StationPwd"
         android:layout_width="350dp"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="255dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
         android:text="Password"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="504dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StationBrand"
+        tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/BtnUpdateProfile"
+        android:id="@+id/BtnUpdateStationProfile"
         android:layout_width="350dp"
         android:layout_height="50dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="128dp"
         android:background="@drawable/button"
         android:text="UPDATE"
         android:textColor="#FFF"
         android:textSize="18dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="30dp"
-        tools:layout_editor_absoluteY="594dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StationPwd"
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton"
         android:layout_width="159dp"
         android:layout_height="122dp"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="541dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginBottom="615dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,4 +110,3 @@
         app:srcCompat="@drawable/picture1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
