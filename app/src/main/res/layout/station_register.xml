@@ -9,10 +9,10 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="419dp"
-        android:layout_height="324dp"
+        android:layout_width="348dp"
+        android:layout_height="267dp"
         android:layout_marginBottom="380dp"
-        android:src="@drawable/image"
+        android:src="@drawable/logo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:letterSpacing="0.03"
@@ -34,7 +34,7 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="360dp" />
+        tools:layout_editor_absoluteY="322dp" />
 
     <EditText
         android:id="@+id/stationName"
@@ -42,8 +42,8 @@
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/forget"
+        android:hint="Station Name"
         android:paddingLeft="20dp"
-        android:text="Station Name"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -54,31 +54,31 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="30dp" />
 
-    <EditText
+
+    <Spinner
         android:id="@+id/stationLoc"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/forget"
-        android:text="Station Location"
+        android:hint="Station Location"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stationName"
         tools:ignore="MissingConstraints" />
 
-
-    <EditText
+    <Spinner
         android:id="@+id/stationBrand"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="12dp"
         android:background="@drawable/forget"
+        android:hint="Station Brand"
         android:paddingLeft="20dp"
-        android:text="Station Brand"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -92,15 +92,16 @@
         android:id="@+id/stationPassword"
         android:layout_width="350dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/forget"
+        android:hint="Password"
+        android:inputType="textPassword"
         android:paddingLeft="20dp"
-        android:text="Password"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stationBrand"
         tools:ignore="MissingConstraints" />
@@ -109,14 +110,14 @@
         android:id="@+id/btnStationReg"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button"
         android:text="Register"
         android:textColor="#FFF"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stationPassword"
         tools:ignore="MissingConstraints" />
@@ -125,16 +126,15 @@
         android:id="@+id/stationSignInText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
         android:text="Already have an account? Sign In"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnStationReg"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="691dp" />
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
