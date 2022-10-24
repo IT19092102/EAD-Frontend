@@ -16,6 +16,7 @@ public class StationLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.station_login);
 
+        //assigning variables to the resource id of Station Register Text
         textView=(TextView) findViewById(R.id.stationRegisterTxt);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +26,7 @@ public class StationLogin extends AppCompatActivity {
         });
     }
 
+    //method to navigate from Station Login UI to Station Register UI
     public void navigateToStationRegister(){
         Intent intent = new Intent(this,StationRegister.class);
         startActivity(intent);

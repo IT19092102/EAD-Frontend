@@ -26,7 +26,7 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
+//method used to navigate from login to register UI
     public void signUpNavigation(){
         Intent intent = new Intent(this,Register.class);
         startActivity(intent);

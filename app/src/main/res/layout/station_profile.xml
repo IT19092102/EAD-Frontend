@@ -8,12 +8,13 @@
 
     <EditText
         android:id="@+id/StationText"
+        android:drawableLeft="@drawable/stationicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Station Name"
+        android:hint=" Station Name"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -25,12 +26,13 @@
 
     <EditText
         android:id="@+id/StationLoc"
+        android:drawableLeft="@drawable/locationicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Station Location"
+        android:hint=" Station Location"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -42,6 +44,7 @@
 
     <EditText
         android:id="@+id/StationBrand"
+        android:drawableLeft="@drawable/brandicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginStart="21dp"
@@ -49,7 +52,7 @@
         android:layout_marginEnd="22dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Station Brand"
+        android:hint=" Station Brand"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -60,6 +63,7 @@
 
     <EditText
         android:id="@+id/StationPwd"
+        android:drawableLeft="@drawable/passwordicon"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -68,7 +72,7 @@
         android:layout_marginBottom="255dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Password"
+        android:hint=" Password"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"

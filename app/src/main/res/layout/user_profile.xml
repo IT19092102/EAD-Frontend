@@ -9,6 +9,7 @@
 
     <EditText
         android:id="@+id/emailText"
+        android:drawableLeft="@drawable/emailicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginStart="30dp"
@@ -17,7 +18,7 @@
         android:layout_marginBottom="501dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Email"
+        android:hint=" Email"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -29,12 +30,13 @@
 
     <EditText
         android:id="@+id/phoneText"
+        android:drawableLeft="@drawable/phoneicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Phone Number"
+        android:hint=" Phone Number"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -46,12 +48,13 @@
 
     <EditText
         android:id="@+id/licenseText"
+        android:drawableLeft="@drawable/licenseicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Driving License"
+        android:hint=" Driving License"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"
@@ -64,12 +67,13 @@
 
     <EditText
         android:id="@+id/passwordText"
+        android:drawableLeft="@drawable/passwordicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/forget"
         android:paddingLeft="20dp"
-        android:text="Password"
+        android:hint=" Password"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
         android:textStyle="bold"

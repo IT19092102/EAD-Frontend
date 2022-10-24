@@ -43,16 +43,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //method to navigate from welcome UI to Register UI
     public void register(){
         Intent intent = new Intent(this,Register.class);
         startActivity(intent);
     }
 
+    //method to navigate from Welcome UI to Login UI
     public void login(){
         Intent intent = new Intent(this,Login.class);
         startActivity(intent);
     }
 
+    //method to navigate from Welcome UI to Station Owner Login UI
     public void station(){
         Intent intent = new Intent(this,StationLogin.class);
         startActivity(intent);

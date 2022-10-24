@@ -15,7 +15,9 @@ import android.widget.Toast;
 public class StationRegister extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     TextView textView;
+    //assigning an array of locations for the station
     String[] locations = { "Select Station Location", "Ampara","Anuradhapura","Badulla","Batticaloa","Colombo","Galle", "Gampaha","Hambanthota","Jaffna","Kaluthara"};
+    //assigning an array of the type of fuel brands
     String[] brands = {"Choose Fuel Brand", "CEYPETCO", "IOC"};
 
     @Override
@@ -23,18 +25,20 @@ public class StationRegister extends AppCompatActivity implements AdapterView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.station_register);
 
-        //locations spinner
+        //adding a spinner object to find out which item is selected
         Spinner spinner = findViewById(R.id.stationLoc);
         spinner.setOnItemSelectedListener(this);
 
+        //creating an instance of ArrayAdapter to having the list of locations
         ArrayAdapter ad= new ArrayAdapter(this,android.R.layout.simple_spinner_item,locations);
         ad.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(ad);
 
-        //brands spinner
+        //adding a spinner object to find out which item is selected
         Spinner brandspinner = findViewById(R.id.stationBrand);
         brandspinner.setOnItemSelectedListener(this);
 
+        //creating an instance of ArrayAdapter to having the list of brands
         ArrayAdapter brandad=new ArrayAdapter(this, android.R.layout.simple_spinner_item,brands);
         brandspinner.setAdapter(brandad);
 
@@ -51,12 +55,14 @@ public class StationRegister extends AppCompatActivity implements AdapterView.On
 
 
 
+    //method to navigate from Station Register UI to Station Login UI
     public void navigateToStationLogin(){
         Intent intent = new Intent(this,StationLogin.class);
         startActivity(intent);
     }
 
 
+    //perform the action when an item is selected from the spinner
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
 

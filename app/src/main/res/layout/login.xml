@@ -24,6 +24,7 @@
 
     <TextView
         android:id="@+id/loginText"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -39,12 +40,12 @@
 
     <EditText
         android:id="@+id/TxtUserEmail"
-
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="52dp"
         android:background="@drawable/forget"
-        android:hint="Email"
+        android:drawableLeft="@drawable/emailicon"
+        android:hint=" Email"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
@@ -56,11 +57,12 @@
 
     <EditText
         android:id="@+id/TxtUserPwd"
+        android:drawableLeft="@drawable/passwordicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/forget"
-        android:hint="Password"
+        android:hint=" Password"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"

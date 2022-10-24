@@ -37,10 +37,11 @@
 
     <EditText
         android:id="@+id/RegTxtUserEmail"
+        android:drawableLeft="@drawable/emailicon"
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:background="@drawable/forget"
-        android:hint="Email"
+        android:hint=" Email"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
@@ -55,11 +56,12 @@
 
     <EditText
         android:id="@+id/RegPhone"
+        android:drawableLeft="@drawable/phoneicon"
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/forget"
-        android:hint="Phone Number"
+        android:hint=" Phone Number"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
@@ -72,11 +74,12 @@
 
     <EditText
         android:id="@+id/RegTxtUserLicense"
+        android:drawableLeft="@drawable/licenseicon"
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/forget"
-        android:hint="Driving License"
+        android:hint=" Driving License"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
@@ -90,11 +93,12 @@
 
     <EditText
         android:id="@+id/RegPassword"
+        android:drawableLeft="@drawable/passwordicon"
         android:layout_width="350dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/forget"
-        android:hint="Password"
+        android:hint=" Password"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"

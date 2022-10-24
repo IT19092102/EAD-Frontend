@@ -37,11 +37,12 @@
 
     <EditText
         android:id="@+id/TxtStatName"
+        android:drawableLeft="@drawable/stationicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="64dp"
         android:background="@drawable/forget"
-        android:hint="Station Name"
+        android:hint=" Station Name"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"
         android:textSize="18dp"
@@ -55,11 +56,12 @@
 
     <EditText
         android:id="@+id/TxtStatPwd"
+        android:drawableLeft="@drawable/passwordicon"
         android:layout_width="350dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/forget"
-        android:hint="Password"
+        android:hint=" Password"
         android:inputType="textPassword"
         android:paddingLeft="20dp"
         android:textColor="#0d6e6a"

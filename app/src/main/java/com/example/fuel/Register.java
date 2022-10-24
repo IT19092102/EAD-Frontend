@@ -16,6 +16,7 @@ public class Register extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.register);
 
+        //assigning variables to Resource ID of signIn Text displayed
         textView=(TextView) findViewById(R.id.signInTxt);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,6 +26,7 @@ public class Register extends AppCompatActivity {
         });
     }
 
+    //method to navigate from Register UI to Login UI
     public void signInNavigation(){
         Intent intent = new Intent(this,Login.class);
         startActivity(intent);
